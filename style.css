@@ -1,0 +1,27 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    margin: 0%;
+
+    background-color: #00ffc0;
+    color: black;
+}
+
+.logo {
+    float: left;
+}
+
+header h1 {
+    margin: 0;
+    padding: 17px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+  }
+header img {
+    padding: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+  
