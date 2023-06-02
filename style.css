@@ -186,9 +186,10 @@ section {
 }
 
 .cand {
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 50px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+
 }
