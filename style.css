@@ -70,6 +70,11 @@ header img {
     background-color: lightgray;
 }
 
+section h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
 @media only screen and (max-width: 750px) {
     .title-container {
         display: none;
@@ -89,6 +94,10 @@ header img {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    section h1{
+        font-size: 30px;
     }
 
 }
@@ -176,7 +185,3 @@ section {
     font-family: 'Rubik', sans-serif;
 }
 
-section h1 {
-    font-weight: 700;
-    font-size: 60px;
-}
