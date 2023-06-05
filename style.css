@@ -135,6 +135,9 @@ section h1 {
     .carrusel img {
         width:100%;
     }
+    .carrusel h1 {
+        font-size: 21px;
+    }
 
     
     .negro img {
@@ -143,6 +146,10 @@ section h1 {
 
     .negro {
         display: block;
+    }
+
+    .negro h1, h2 {
+        font-size: 20px;
     }
 }
 
