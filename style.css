@@ -203,8 +203,8 @@ section h1 {
     }
     .negro {
         display: flex;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -242,6 +242,8 @@ section h1 {
 
     .negro {
         display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
