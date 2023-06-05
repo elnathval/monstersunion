@@ -136,15 +136,13 @@ section h1 {
         width:100%;
     }
 
-    .negro h1 {
-        font-size: 20px;
+    
+    .negro img {
+        width: 100%;
     }
 
-    .negro h2 {
-        font-size: 15px;
-    }
-    .negro img {
-        width: 100px;
+    .negro {
+        display: block;
     }
 }
 
@@ -194,6 +192,9 @@ section h1 {
     .negro h2 {
         font-size:15px ;
     }
+    .negro {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 991px) {
@@ -226,6 +227,10 @@ section h1 {
     .carrusel {
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .negro {
+        display: flex;
     }
 }
 
