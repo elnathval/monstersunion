@@ -311,6 +311,10 @@ section {
     font-family: 'Rubik', sans-serif;
 }
 
+section h3 {
+    margin: 40px;
+}
+
 .cand {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
