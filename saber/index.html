@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio | Monsters Union</title>
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <a href="../" style="display: inline-block;"><img class="logo" src="../logomublack.png" width="289px" style="display:block"></a>
+            <div class="title-container">
+                <a href="../" style="color:black;"><h1 class="link" style="float: left; display: block;">Inicio</h1></a>
+                <a href="../campana/" style="color:black;"><h1 class="link" style="float: left;">Programa</h1></a>
+                <a href="../candidatos/" style="color:black;"><h1 class="link" style="float: left;">Candidatos</h1></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ" style="color:black;"><h1 class="link" style="float: left;">Multimedia</h1></a>
+            </div>
+        </header>
+        <div class="card1"><h2>ELECCIONES 12J: Empieza la campaña</h2></div>
+        <div class="navbar">
+            <a href="../campana/" style="color:white; display: block;"><h1 class="link">Programa</h1></a>
+            <a href="../candidatos/" style="color:white; display: block;"><h1 class="link">Candidatos</h1></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" style="color:white; display: block;"><h1 class="link">Multimedia</h1></a>
+        </div>
+
+        <!--CONTENIDO-->
+        <div>
+            <h1 class="titol">ELECCIONES GENERALES Y EUROPEAS 12 JULIO</h1>
+            <h2 class="subtitol">Partidos y resultados</h2>
+
+
+            <h2 class="subtitol">Conteo</h2>
+            <div class="container">
+                <div id="contenedor" style="width:60%; height: 5%; background-color: gray; display: flex; margin-left: 20%; margin-bottom: 30px; margin-top: 5%;">
+                    <h1 id="nada" style="margin-left: 45%;">Nada</h1>
+                    <span id="mu" style="background-color: #00ffc0; display: none;">
+                        <strong style="">MU</strong>
+                        <p id="mup">0</p>
+                    </span>
+                    <span id="ld" style="background-color: #C6E5B1;  display: none;"><strong>LD</strong> <p id="ldp">0</p></span>
+                    <span id="gg" style="background-color: #cfcf3c; width: 20% ; display: none;"><strong>GG</strong> <p id="ggp">0</p></span>
+                    <span id="pp" style="background-color: lightpink; width: 10% ; display: none;"><strong>PP</strong> <p id="ppp">0</p></span>
+                    <span id="rf" style="background-color: lightgray; width: 10% ; display: none;"><strong>RF</strong> <p id="rfp">0</p></span>
+                    <span id="sw" style="background-color: powderblue   ; width: 10% ; display: none;"><strong>SW</strong> <p id="swp">0</p></span>
+                </div>
+        
+                <img id="separador" src="../vertical.png" width="160px" style="display: none;">
+            </div>
+    
+            <div class="botones" style="display: flex; justify-content: center;">
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="mus()">
+                    <h1 style="float: left; margin-top: 8px;">MU</h1>
+                </div>
+        
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="lds()">
+                    <h1 style="float: left; margin-top: 8px;">LD</h1>
+                </div>
+        
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="ggs()">
+                    <h1 style="float: left; margin-top: 8px;">GG</h1>
+                </div>
+        
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="pps()">
+                    <h1 style="float: left; margin-top: 8px;">PP</h1>
+                </div>
+        
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="rfs()">
+                    <h1 style="float: left; margin-top: 8px;">RF</h1>
+                </div>
+        
+                <div class="boton">
+                    <img src="../mas.webp" width="50px" style="float: left; cursor: pointer;" onclick="sws()">
+                    <h1 style="float: left; margin-top: 8px;">SW</h1>
+                </div>
+            </div>
+            
+    
+            <script>
+                var mu = document.getElementById("mu");
+                var ld = document.getElementById("ld");
+                var gg = document.getElementById("gg");
+                var pp = document.getElementById("pp");
+                var rf = document.getElementById("rf");
+                var sw = document.getElementById("sw");
+                var nada = document.getElementById("nada");
+                var sep = document.getElementById("separador");
+                var votos = 0;
+                var vomu = 0;
+                var vold = 0;
+                var vogg = 0;
+                var vopp = 0;
+                var vorf = 0;
+                var vosw = 0;
+    
+                function mus() {
+                    votos++;
+                    vomu++;
+                    comprobacion();
+                    if (vomu > 0) {
+                    mu.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+    
+                function lds() {
+                    votos++;
+                    vold++;
+                    comprobacion();
+                    if (vold > 0) {
+                    ld.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+    
+                function ggs() {
+                    votos++;
+                    vogg++;
+                    comprobacion();
+                    if (vogg > 0) {
+                    gg.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+    
+                function pps() {
+                    votos++;
+                    vopp++;
+                    comprobacion();
+                    if (vopp > 0) {
+                    pp.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+                function rfs() {
+                    votos++;
+                    vorf++;
+                    comprobacion();
+                    if (vorf > 0) {
+                    rf.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+                function sws() {
+                    votos++;
+                    vosw++;
+                    comprobacion();
+                    if (vosw > 0) {
+                    sw.style.display = 'block';
+                    nada.style.display = 'none';
+                    sep.style.display = 'flex';
+                    }
+                }
+    
+                function comprobacion() {
+                    ld.style.width = `${vold / votos * 100}%`;
+                    mu.style.width = `${vomu / votos * 100}%`;
+                    gg.style.width = `${vogg / votos * 100}%`;
+                    pp.style.width = `${vopp / votos * 100}%`;
+                    rf.style.width = `${vorf / votos * 100}%`;
+                    sw.style.width = `${vosw / votos * 100}%`;
+    
+                    document.getElementById("mup").innerHTML = `${vomu}`
+                    document.getElementById("ldp").innerHTML = `${vold}`
+                    document.getElementById("ggp").innerHTML = `${vogg}`
+                    document.getElementById("ppp").innerHTML = `${vopp}`
+                    document.getElementById("rfp").innerHTML = `${vorf}`
+                    document.getElementById("swp").innerHTML = `${vosw}`
+    
+                    var conteo = [vomu, vold, vopp, vogg, vorf, vosw];
+                    conteo.sort(function(a, b){
+                        return b - a;
+                    });
+    
+                    var postconteo = [conteo[0], conteo[2], conteo[3], conteo[4], conteo[5], conteo[1]]
+    
+                    mu.style.order = `${postconteo.indexOf(vomu) + 1}`;
+                    ld.style.order = `${postconteo.indexOf(vold) + 1}`;
+                    gg.style.order = `${postconteo.indexOf(vogg) + 1}`;
+                    pp.style.order = `${postconteo.indexOf(vopp) + 1}`;
+                    rf.style.order = `${postconteo.indexOf(vorf) + 1}`;
+                    sw.style.order = `${postconteo.indexOf(vosw) + 1}`;
+    
+                    document.getElementById("contenedor").style.marginBottom = '-90px';
+    
+                }
+    
+                
+            </script>
+        
+        <footer>
+            <p>Hecho con cariño por Nathan ❤️❤️ para 3ºC </p>
+            <p>Esto es un proyecto de Lenny, Carlos, Nathan y Rafa.</p>
+            <p>©2023 Monsters Union S.A.</p>
+        </footer>
+    </body>
+</html>
