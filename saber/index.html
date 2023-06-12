@@ -78,7 +78,7 @@
                     <h1 style="float: left; margin-top: 8px;">SW</h1>
                 </div>
             </div>
-            <h2 class="subtitol" id="mayoria"></h2>
+            <h2 class="subtitol" id="mayoria" style="margin-bottom: 50px"></h2>
     
             <script>
                 var mu = document.getElementById("mu");
@@ -191,7 +191,7 @@
                     sw.style.order = `${postconteo.indexOf(vosw) + 1}`;
     
                     document.getElementById("contenedor").style.marginBottom = '-90px';
-                    document.getElementById("mayoria").innerHTML = `Mayoría: ${votos / 2} votos.`
+                    document.getElementById("mayoria").innerHTML = `Mayoría: ${Math.ceil(votos/2)} votos.`
                 }
     
                 
